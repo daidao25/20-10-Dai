@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Chúc mừng ngày 20/10 - IT2-K63-UTC</title>
+    <link type="text/css" rel="stylesheet" href="./asset/style.css">
+
+    <!-- Script sẵn có -->
+    <script type="text/javascript" src="./asset/jquery.min.js"></script>
+    <script type="text/javascript" src="./asset/jscex.min.js"></script>
+    <script type="text/javascript" src="./asset/jscex-parser.js"></script>
+    <script type="text/javascript" src="./asset/jscex-jit.js"></script>
+    <script type="text/javascript" src="./asset/jscex-builderbase.min.js"></script>
+    <script type="text/javascript" src="./asset/jscex-async.min.js"></script>
+    <script type="text/javascript" src="./asset/jscex-async-powerpack.min.js"></script>
+    <script type="text/javascript" src="./asset/functions.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./asset/love.js" charset="utf-8"></script>
+
+    <style>
+        /* Căn trái phần nội dung lời chúc chính */
+        #text {
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+            font-size: 18px;
+        }
+
+        /* Ảnh icon Minh Quân góc phải dưới */
+        #icon-quan {
+    position: fixed;
+    bottom: 650px;
+    right: 50px;
+    width: 550px;   /* bạn có thể điều chỉnh kích thước này tùy ý */
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+    display: none;
+
+        }
+        #icon-quan:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255,105,180,0.7);
+        }
+
+        
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translate(-50%, -48%); }
+            to { opacity: 1; transform: translate(-50%, -50%); }
+        }
+
+        #special-message h2 {
+            color: #e91e63;
+            margin-bottom: 10px;
+        }
+
+        #close-btn {
+            background: #e91e63;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-top: 15px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        #close-btn:hover {
+            background: #ad1457;
+        }
+
+#hint {
+    position: fixed;
+    top: calc(50% + 320px); /* canh bên dưới ảnh (tùy chỉnh khoảng cách) */
+    left: 50%;
+    transform: translateX(-50%); /* căn giữa */
+    background: #ff66b2;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    animation: bounce 1.5s infinite;
+    z-index: 1000;
+    display: none;
+    cursor: pointer;
+}
+
+
+        
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+        }
+
+        /* Thêm cursor pointer cho ảnh tym */
+        #tym-img {
+            cursor: pointer;
+        }
+
+        #special-message {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.97);
+            border-radius: 20px;
+            padding: 0 40px 20px 40px;
+            width: 70%;
+            max-width: 700px;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 0 25px rgba(255, 105, 180, 0.8);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333;
+            text-align: center;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        #special-message h2 {
+            color: #e91e63;
+            margin: 0;
+            padding: 20px 0;
+            background: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            border-bottom: 1px solid #e91e63;
+        }
+
+        #special-message::-webkit-scrollbar {
+            width: 8px;
+        }
+        #special-message::-webkit-scrollbar-thumb {
+            background: #e91e63;
+            border-radius: 4px;
+        }
+
+        #close-btn {
+            background: #e91e63;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: auto;  /* quan trọng: đẩy xuống cuối */
+        }
+        #close-btn:hover {
+            background: #ad1457;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="wrap">
+            <div id="text" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                <div id="code">
+                    <font color="#000">
+                        <span class="say">💐 Chúc mừng ngày Phụ nữ Việt Nam 20/10 💐</span><br><br>
+
+                       <span class="say">Hôm nay là một ngày thật đặc biệt – dành để gửi lời chúc tới những cô gái tuyệt vời trong nhóm của chúng ta. 💖</span><br>
+<span class="say">Chúc các bạn luôn xinh đẹp, tự tin, rạng rỡ và hạnh phúc trên hành trình của riêng mình. 🌸</span><br>
+<span class="say">Cảm ơn các bạn vì đã mang đến niềm vui, tiếng cười và những khoảnh khắc đáng nhớ cho cả nhóm. 🌼</span><br>
+<span class="say">Mong rằng mỗi ngày bên nhau đều thật ý nghĩa, nhiều kỷ niệm đẹp và luôn gắn bó như bây giờ. 🌈</span><br>
+<span class="say">Chúc mừng ngày đặc biệt của một nửa xinh đẹp trong hội tụi mình! Luôn cười thật tươi nha. 💕</span><br>
+
+
+                        <!-- Ban đầu chỉ hiển thị ảnh tym -->
+                        <span class="say">
+                            <img id="tym-img" width="100px" height="100px" src="image/tym.png" alt="">
+                        </span>
+                        <span class="say">-- Nhóm ACE Chưa Có Người Yêu 💞 --</span>
+                    </font>
+                </div>
+            </div>
+            <canvas id="canvas" width="1100" height="680"></canvas>
+        </div>
+    </div>
+    
+    <!-- Chỉ dẫn -->
+    <div id="hint">👉 Bấm vào ảnh để xem lời chúc đặc biệt 💌</div>
+
+    <!-- Ảnh Minh Quân ở góc (ẩn ban đầu) -->
+    <img id="icon-quan" src="image/3x4.jpg" alt="Minh Quân">
+
+    <!-- Hộp lời chúc đặc biệt -->
+    <div id="special-message">
+        <<h2>💌 Lời chúc đặc biệt từ hội bạn 💌</h2>
+<p>
+    Nhân ngày 20/10, thay mặt hội “ACE không có người yêu” gửi đến 5 cô gái dị nhất nhóm những lời chúc thật chill nhưng cũng thật “có tâm” 🤝✨<br><br>
+
+    💸 <b>My</b> – Chúc mày tiền vào như nước, ví lúc nào cũng đầy, mua gì cũng không phải nhìn giá. Sớm có 10 tỉ trong tài khoản 😎<br><br>
+
+    💘 <b>Thùy</b> – Chúc mày sớm thoát kiếp F.A, có một mối tình đầu chất lượng cao, ngọt ngào như phim Hàn. Còn nếu chưa có ai thì cứ yên tâm, lên chùa đi tu hehe 🚢❤️<br><br>
+
+    😎 <b>Ngà</b> – Trai thì nhiều, nhưng nhớ chọn đúng một anh tử tế, đẹp trai, không “cà khịa” linh tinh. Cứ lắm tiền đzai thì chốt 🤭<br><br>
+
+    💍 <b>Diễm</b> – Chúc mày sớm về chung một nhà với anh bộ đội siêu ngầu. Mai này đám cưới nhớ đãi hội này nguyên bàn VIP  🤪<br><br>
+
+    🧠 <b>Huệ</b> – Chúc mày yêu ai cũng tỉnh táo, không để ai dắt mũi. Mày mà khôn thêm xíu nữa thì thiên hạ khỏi có cửa 🫡🔥<br><br>
+
+    Chúc 5 chúng mày có một ngày 20/10 vui như đi trúng thưởng, ăn ngon – mặc đẹp – cười mỏi miệng, và nếu có trai tặng quà thì càng tốt 🥳🎁  
+</p>
+
+
+        <button id="close-btn">Đóng</button>
+    </div>
+
+    <!-- Nhạc nền -->
+    <audio id="myAudio" autoplay="autoplay" loop>
+        <source src="music/nhac.mp3" type="audio/mp3" />
+    </audio>
+
+    <script src="./asset/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const icon = document.getElementById('icon-quan');
+            const hint = document.getElementById('hint');
+            const message = document.getElementById('special-message');
+            const closeBtn = document.getElementById('close-btn');
+
+            // Ẩn icon và hint ban đầu
+            icon.style.display = 'none';
+            hint.style.display = 'none';
+            message.style.display = 'none';
+
+            // Sau 10 giây, hiển thị icon và hint tự động
+            setTimeout(() => {
+                icon.style.display = 'block';
+                hint.style.display = 'block';
+            }, 10000);
+
+            // Khi click ảnh Minh Quân
+            icon.addEventListener('click', () => {
+                message.style.display = 'flex'; // Hiển thị popup
+            });
+
+            // Đóng hộp lời chúc khi bấm nút
+            closeBtn.addEventListener('click', () => {
+                message.style.display = 'none';
+            });
+
+            // Đóng popup khi click ra ngoài popup
+            document.addEventListener('click', (e) => {
+                if (message.style.display === 'flex' && !message.contains(e.target) && e.target !== icon) {
+                    message.style.display = 'none';
+                }
+            });
+        });
+
+
+    </script>
+</body>
+</html>
